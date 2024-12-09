@@ -1,7 +1,7 @@
-import { importTxtFile } from "../../utils/fileReader";
+import { importTxtFileAsArray } from "../../utils/fileReader";
 
-const exampleInput = importTxtFile("2024/01/example1.txt", "\n");
-const aocInput = importTxtFile("2024/01/input.txt", "\n");
+const exampleInput = importTxtFileAsArray("2024/01/example1.txt", "\n");
+const aocInput = importTxtFileAsArray("2024/01/input.txt", "\n");
 
 const sortLists = (input: string[]) => {
   const list1 = [];

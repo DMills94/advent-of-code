@@ -1,7 +1,7 @@
-import { importTxtFile } from "../../utils/fileReader";
+import { importTxtFileAsArray } from "../../utils/fileReader";
 
-const exampleInput = importTxtFile("2024/02/example.txt", "\n");
-const aocInput = importTxtFile("2024/02/input.txt", "\n");
+const exampleInput = importTxtFileAsArray("2024/02/example.txt", "\n");
+const aocInput = importTxtFileAsArray("2024/02/input.txt", "\n");
 
 const isReportSafe = (report: number[]) => {
   const isIncreasing = report[0] < report[1];
